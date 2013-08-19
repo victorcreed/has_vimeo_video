@@ -4,6 +4,10 @@ module HasVimeoVideo
     def self.regex
       /https?:\/\/(www\.)?vimeo.com\/(\d+)/
     end
+
+    def self.regex_custom
+      /https?:\/\/(www\.)?(vimeo|youtube).com\/(\d+)/
+    end
     
     def initialize url
       @url = url
